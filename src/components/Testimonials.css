@@ -1,0 +1,70 @@
+.testimonials{
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+}
+
+.testimonials .container{
+    width: 1240px;
+    margin: 4rem auto;
+    padding: 4rem 0;
+}
+
+.testimonials h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.testimonials .container .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 4rem 0;
+}
+
+.testimonials .card{
+    border: 1px solid #eee;
+    border-radius: .5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin: 12px;
+}
+
+.testimonials img{
+    border-radius: 50%;
+    width: 80px;
+    margin-top: -2rem;
+}
+
+.testimonials .card .description{
+    color: #5e5e5e;
+    font-size: 1rem;
+}
+
+.testimonials .card .name{
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.testimonials .card .title{
+    color: #5e5e5e;
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 950px){
+    .testimonials .container{
+        width: 100%;
+    }
+
+    .testimonials .container .content{
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials .card{
+        max-width: 100%;
+        margin: 1rem;
+    }
+}
